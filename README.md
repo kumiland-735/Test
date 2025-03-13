@@ -28,25 +28,25 @@ Minecraft Java版で利用できるプラグイン「宝探しゲーム」です
 　　
 
 ## プレイ説明動画
+https://github.com/user-attachments/assets/328fb28c-6021-4626-aee5-f0ccc79fe693
 
 
 
 
 
->[!TIP]
->### データベース設計
->|属性|設定値|
->|----|----|
->|ユーザー名|※|
->|パスワード|※|
->|URL|※|
->|データベース名|spigot_server|
->|テーブル名|player_score|
->### データベースの接続方法
->
->1. ご自身のローカル環境でMySQLに接続してください。
->
->2. 以下のコマンドを順に実行し、データベースを作成してください。
+### データベース設計
+|属性|設定値|
+|----|----|
+|ユーザー名|※|
+|パスワード|※|
+|URL|※|
+|データベース名|spigot_server|
+|テーブル名|player_score|
+### データベースの接続方法
+
+1. ご自身のローカル環境でMySQLに接続してください。
+
+2. 以下のコマンドを順に実行し、データベースを作成してください。
 >```
 >CREATE DATABASE spigot_server;
 >```
@@ -62,9 +62,9 @@ Minecraft Java版で利用できるプラグイン「宝探しゲーム」です
 >```
 >CREATE TABLE player_score(id int auto_increment, player_name varchar(100), score int, registered_at datetime, primary key(id)) DEFAULT CHARSET=utf8;
 >```
->
->3. MySQLのurl,username,passwordはご自身のローカル環境に合わせてご使用ください。(mybatis-config.xmlで設定します。)
->   
+
+3. MySQLのurl,username,passwordはご自身のローカル環境に合わせてご使用ください。(mybatis-config.xmlで設定します。)
+   
  
 
 ## 対応バージョン
